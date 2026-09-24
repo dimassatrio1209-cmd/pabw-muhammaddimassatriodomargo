@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Kafe Favorit Saya</title>
+</head>
+<body>
+    <header>
+        <h1>Daftar Kafe Favorit Saya</h1>
+        <p>Halaman sederhana untuk mencatat kafe yang saya sukai, alasan berkunjung, dan rating pribadi.</p>
+
+        <nav aria-label="Navigasi utama">
+            <ul>
+                <li><a href="#daftar-kafe">Daftar Kafe</a></li>
+                <li><a href="#tambah-kafe">Tambah Kafe</a></li>
+                <li><a href="#tentang">Tentang Halaman</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="daftar-kafe">
+            <h2>Daftar Kafe Favorit</h2>
+
+            <table>
+                <caption>Daftar kafe favorit dan penilaian pribadi</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Nama Kafe</th>
+                        <th scope="col">Lokasi</th>
+                        <th scope="col">Menu Favorit</th>
+                        <th scope="col">Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Kafe Favorit 1</th>
+                        <td>Yogyakarta</td>
+                        <td>Kopi Susu</td>
+                        <td>5/5</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Kafe Favorit 2</th>
+                        <td>Yogyakarta</td>
+                        <td>Americano</td>
+                        <td>4/5</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Kafe Favorit 3</th>
+                        <td>Yogyakarta</td>
+                        <td>Matcha Latte</td>
+                        <td>5/5</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Kafe Favorit 4</th>
+                        <td>Yogyakarta</td>
+                        <td>Cafe Latte</td>
+                        <td>4/5</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Kafe Favorit 5</th>
+                        <td>Yogyakarta</td>
+                        <td>Chocolate</td>
+                        <td>4/5</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <figure>
+                <img src="cafe-di-denpasar.jpg"
+                     alt="Ilustrasi meja kafe dengan secangkir kopi dan laptop"
+                     width="640"
+                     height="360"
+                     loading="lazy">
+                <figcaption>Ilustrasi suasana kafe untuk halaman daftar kafe favorit.</figcaption>
+            </figure>
+        </section>
+
+        <section id="tambah-kafe">
+            <h2>Tambah Kafe Favorit</h2>
+
+            <form action="/simpan" method="post">
+                <p>
+                    <label for="nama-kafe">Nama kafe</label>
+                    <input type="text" id="nama-kafe" name="nama-kafe" required>
+                </p>
+
+                <p>
+                    <label for="lokasi-kafe">Lokasi kafe</label>
+                    <input type="text" id="lokasi-kafe" name="lokasi-kafe" required>
+                </p>
+
+                <p>
+                    <label for="rating-kafe">Rating (1–5)</label>
+                    <input type="number" id="rating-kafe" name="rating-kafe"
+                           min="1" max="5" step="1" required>
+                </p>
+
+                <button type="submit">Simpan Kafe</button>
+            </form>
+        </section>
+
+        <section id="tentang">
+            <h2>Tentang Halaman</h2>
+            <p>Halaman ini dibuat sebagai latihan HTML5 semantik, tabel data, gambar dengan alternative text, serta form yang aksesibel.</p>
+        </section>
+    </main>
+
+    <footer id="tentang-footer">
+        <p>Muhammad Dimas Satrio Domargo · NIM: __________ · 2026</p>
+    </footer>
+</body>
+</html>
