@@ -3,23 +3,32 @@
 Repo ini memuat pekerjaan mata kuliah Pengembangan Aplikasi Berbasis Wen, Satu folder untuk tiap pertemuan
 
 ## Pertemuan 4 — Design token halaman profil
- 
-- Berkas gaya yang akan dibuat: tokens.css, base.css,
-  layout.css, komponen.css, tema.css
-- Warna utama: #1D3A8C (biru), dipilih karena ...
- 
+
+Berkas gaya yang akan dibuat: tokens.css, base.css,
+layout.css, komponen.css, tema.css
+Warna utama: #7A4E2D (coffee brown), dipilih karena sesuai dengan tema halaman Daftar Kafe Favorit Saya dan memberikan kesan hangat serta sederhana.
+
 ### Token yang saya tetapkan
- 
-| Token | Nilai | Untuk apa |
-|---|---|---|
-| --color-primary | #7A4E2D | tombol, tautan, penanda |
-| --color-fg | #2B2118 | warna teks utama |
-| --color-bg | #F7F3EE | latar halaman |
-| --radius-md | 0.5rem | sudut tombol dan kartu |
-| --space-4 | 1rem | jarak standar antar elemen |
- 
+
+| Token           | Nilai   | Untuk apa                  |
+| --------------- | ------- | -------------------------- |
+| --color-primary | #7A4E2D | tombol, tautan, penanda    |
+| --color-fg      | #2B2118 | warna teks utama           |
+| --color-bg      | #F7F3EE | latar halaman              |
+| --radius-md     | 0.5rem  | sudut tombol dan kartu     |
+| --space-4       | 1rem    | jarak standar antar elemen |
+
 Kriteria selesai saya: mengubah --color-primary di satu baris
-harus mengubah warna tombol, tautan, judul, dan garis fokus.
+harus mengubah warna tombol, tautan, dan elemen utama yang menggunakan
+token tersebut.
+
+### Pengungkapan AI
+
+    AI digunakan hanya sebagai bantuan pada bagian yang cukup sulit, terutama
+untuk memahami penerapan design token dua lapis, hubungan token primitif
+dan token semantik, serta memeriksa penerapan aksesibilitas CSS. Struktur
+halaman, topik, isi data, dan pengerjaan utama tetap saya kerjakan sendiri.
+
 
 
 ## Pertemuan 3 — Halaman profil saya
