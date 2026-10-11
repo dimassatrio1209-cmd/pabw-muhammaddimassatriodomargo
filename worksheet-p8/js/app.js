@@ -69,4 +69,4 @@ const proyekTerurut = [...daftarProyek].sort(
 console.table(proyekTerurut);
 
 // Memeriksa urutan data asli
-console.table(daftarProyek);
+console.table(daftarProyek);git
