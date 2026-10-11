@@ -1,4 +1,4 @@
-
+// updated app.js
 const profil = {
   nama: "Muhammad Dimas Satrio Domargo",
   peran: "Mahasiswa Informatika",
@@ -16,7 +16,6 @@ function buatPerkenalan({ nama, peran }) {
   return `${nama} — ${peran}`;
 }
 
-// Fungsi murni 2: memformat daftar keahlian
 const formatKeahlian = (daftar) => daftar.join(" · ");
 
 console.log(buatPerkenalan(profil));
