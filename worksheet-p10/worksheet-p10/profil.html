@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Profil dan portofolio mahasiswa Informatika.">
+  <meta name="theme-color" content="#7A4E2D">
+  <title>Profil | Muhammad Dimas Satrio Domargo</title>
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="komponen.css">
+  <link rel="stylesheet" href="tema.css">
+  <link rel="stylesheet" href="responsif.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#utama">Dimas<span>.</span></a>
+    <nav aria-label="Navigasi utama">
+      <a href="#tentang">Tentang</a>
+      <a href="#keahlian">Keahlian</a>
+      <a href="#proyek">Proyek</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <main id="utama" class="page-shell">
+    <div class="content">
+      <aside class="sidebar card" aria-label="Ringkasan profil">
+        <div class="avatar" aria-hidden="true">MD</div>
+        <h1>Muhammad Dimas Satrio Domargo</h1>
+        <p class="role">Mahasiswa Informatika</p>
+        <p class="muted">Tertarik pada pengembangan aplikasi, desain antarmuka, dan teknologi web.</p>
+        <a class="button" href="#proyek">Lihat proyek</a>
+        <div class="sidebar-meta">
+          <span>Program Studi</span><strong>Informatika</strong>
+          <span>Fokus belajar</span><strong>Web &amp; Software Development</strong>
+        </div>
+      </aside>
+
+      <div class="main-content">
+        <section id="tentang" class="hero card">
+          <p class="eyebrow">PROFIL SINGKAT</p>
+          <h2>Membangun solusi digital yang berguna.</h2>
+          <p>Saya mahasiswa Informatika yang sedang mengembangkan kemampuan pemrograman, analisis kebutuhan, dan perancangan antarmuka. Saya senang memecah masalah menjadi bagian yang terstruktur dan mudah dikelola.</p>
+        </section>
+
+        <section id="keahlian" class="section-block">
+          <div class="section-heading">
+            <p class="eyebrow">KOMPETENSI</p>
+            <h2>Keahlian yang sedang dikembangkan</h2>
+          </div>
+          <div class="grid">
+            <article class="skill-card card"><span class="skill-index">01</span><h3>HTML</h3><p>Menyusun struktur halaman web yang semantik dan mudah diakses.</p></article>
+            <article class="skill-card card"><span class="skill-index">02</span><h3>CSS</h3><p>Membuat tata letak responsif dengan token desain dan media query.</p></article>
+            <article class="skill-card card"><span class="skill-index">03</span><h3>Java</h3><p>Menerapkan dasar pemrograman berorientasi objek.</p></article>
+          </div>
+        </section>
+
+        <section id="proyek" class="section-block">
+          <div class="section-heading">
+            <p class="eyebrow">PORTOFOLIO</p>
+            <h2>Proyek pembelajaran</h2>
+            <p>Gunakan tombol kategori untuk memfilter daftar proyek.</p>
+          </div>
+
+          <div id="filter" class="filter-row" aria-label="Filter kategori proyek">
+            <button class="filter-button active" type="button" data-category="all" aria-pressed="true">Semua</button>
+            <button class="filter-button" type="button" data-category="selesai" aria-pressed="false">Selesai</button>
+            <button class="filter-button" type="button" data-category="belum" aria-pressed="false">Belum selesai</button>
+          </div>
+
+          <p id="empty-message" class="empty-message" role="status" hidden>Belum ada proyek pada kategori ini.</p>
+          <ul id="list" class="project-list" aria-label="Daftar proyek"></ul>
+        </section>
+
+        <section id="berita" class="section-block">
+          <div class="section-heading">
+            <p class="eyebrow">DATA API</p>
+            <h2>Berita untuk Dibaca</h2>
+            <p>Data dimuat dari API publik menggunakan Fetch API.</p>
+          </div>
+          <p id="news-status" class="form-status" role="status" aria-live="polite">Memuat berita...</p>
+          <ul id="news-list" class="project-list" aria-label="Daftar berita"></ul>
+        </section>
+
+        <section id="kontak" class="section-block">
+          <div class="section-heading">
+            <p class="eyebrow">FORMULIR</p>
+            <h2>Hubungi saya</h2>
+            <p>Isi seluruh kolom dengan data yang valid. Formulir ini digunakan untuk latihan validasi di sisi klien.</p>
+          </div>
+
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-field">
+              <label for="nama">Nama</label>
+              <input id="nama" name="nama" type="text" autocomplete="name" aria-describedby="nama-error" required>
+              <p id="nama-error" class="field-error" aria-live="polite"></p>
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" aria-describedby="email-error" required>
+              <p id="email-error" class="field-error" aria-live="polite"></p>
+            </div>
+
+            <div class="form-field">
+              <label for="pesan">Pesan</label>
+              <textarea id="pesan" name="pesan" rows="4" aria-describedby="pesan-error" required></textarea>
+              <p id="pesan-error" class="field-error" aria-live="polite"></p>
+            </div>
+
+            <button id="submit-button" class="button submit-button" type="submit" disabled>Kirim pesan</button>
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Muhammad Dimas Satrio Domargo · 25523262 · Dibuat untuk pembelajaran PABW.</p>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+  <script type="module" src="js/dom.js"></script>
+</body>
+</html>
